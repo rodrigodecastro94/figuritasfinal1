@@ -1,0 +1,52 @@
+.items{
+  padding:25px;
+  margin:15px;
+  
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  img{
+    width: 150px;
+    height: 207px;
+  }
+  fieldset{
+    border: 1px solid #80808075;
+    margin:20px;
+  }
+  legend{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.titulo{
+  text-align: center;
+    font-size: 20px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    font-weight: 700;
+    
+}
+.boton-contenedor{
+  display: flex;
+    justify-content: space-around;
+    margin-top: 14px;
+    
+}
+button{
+  padding: 5px 14px;
+    border: none;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.subtitulo{
+  text-align: center;
+}
+  
+  .cats{
+  padding:5px;
+  margin:5px;
+  
+  
+  display:flex;
+  }
