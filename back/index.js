@@ -10,33 +10,7 @@ app.use(express.json());
 app.use(cors());
 const port = 3001;
 
-/*app.post("/login", (req, response) => {
-  let usuario = req.body.usuario;
-  let clave = req.body.clave;
 
-  pool.query(
-    "SELECT * FROM usuario WHERE usuario = '" +
-      usuario +
-      "' AND clave= '" +
-      clave +
-      "' ORDER BY id ASC",
-    (error, results) => {
-      if (error) {
-        response.status(401).json({ msg: "usuario incorrecto" });
-      }
-      else{
-        if(results.rows.length>0)
-        response.status(200).json({ msg: "ok" });
-        else
-        response.status(401).json({ msg: "usuario incorrecto" });
-
-        
-      }
-      
-    }
-  );
-});*/
-//listado
 app.get("/figuritas", (request, response) => {
   const connection = mysql.createConnection({
     host: "localhost",
