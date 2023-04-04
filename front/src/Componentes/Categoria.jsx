@@ -1,6 +1,6 @@
 //import "./Listado.css";
 import React, { useState, useEffect } from "react";
-import Figurita from "./Figurita";
+
 //import { Link } from "react-router-dom";
 function Categoria(props) {
   

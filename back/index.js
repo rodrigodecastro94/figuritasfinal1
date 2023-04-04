@@ -26,7 +26,7 @@ app.get("/figuritas", (request, response) => {
     (err, rows, fields) => {
       if (err) throw err;
 
-      response.status(200).json({ categorias: rows[1], figuritas: rows[0] });
+      response.status(200).json({ figuritas: rows[0] ,categorias: rows[1]});
     }
   );
   connection.end();
@@ -43,11 +43,11 @@ app.put("/figurita/sumar/:id", (request, response) => {
   });
   connection.connect();
   connection.query(
-    "UPDATE figurita SET cantidad ="+cantidad+" WHERE id = "+id+ ";SELECT * from figurita; SELECT * from categoria",
+    "UPDATE figurita SET cantidad ="+cantidad+" WHERE id = "+id+ "; SELECT * from figurita;   SELECT * from categoria",
     (err, rows, fields) => {
       if (err) throw err;
 
-      response.status(200).json({ categorias: rows[2], figuritas: rows[1] });
+      response.status(200).json({  figuritas: rows[1] ,categorias: rows[2] });
     }
   );
  
@@ -69,7 +69,7 @@ app.put("/figurita/restar/:id", (request, response) => {
     (err, rows, fields) => {
       if (err) throw err;
 
-      response.status(200).json({ categorias: rows[2], figuritas: rows[1] });
+      response.status(200).json({ figuritas: rows[1] , categorias: rows[2] });
     }
   );
  
